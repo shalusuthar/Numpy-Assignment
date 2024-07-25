@@ -1,0 +1,396 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "fb63448e-b42f-45f3-b1ad-5b1309efb8f9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np\n",
+    "list_ = [1,2,3,4,5]\n",
+    "array_list = np.array(object = list_)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f0c9befc-f872-45db-9faf-629f715b62b6",
+   "metadata": {},
+   "source": [
+    "Q1. Is there any difference in the data type of variables list_ and array_list? If there is then write a code\n",
+    "to print the data types of both the variables."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "56226831-a549-40c0-a11a-92c9b854a618",
+   "metadata": {},
+   "source": [
+    "Ans. The List refers to a collection of various elements in a sequence, in which every element is basically an object. Also, we can access these elements by their positions (index). On the other hand, an ArrayList creates an array (dynamic) of the objects that can easily reduce or increase in size as and when required."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "629f23fa-6211-4883-b98a-d077ea08dd0f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "list_ = [1,2,3,4,5]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "1af0d1a1-db85-4eae-a0e4-68e385895ada",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "AttributeError",
+     "evalue": "'list' object has no attribute 'dtype'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mAttributeError\u001b[0m                            Traceback (most recent call last)",
+      "Cell \u001b[0;32mIn[20], line 1\u001b[0m\n\u001b[0;32m----> 1\u001b[0m \u001b[43mlist_\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mdtype\u001b[49m()\n",
+      "\u001b[0;31mAttributeError\u001b[0m: 'list' object has no attribute 'dtype'"
+     ]
+    }
+   ],
+   "source": [
+    "list_.dtype()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "17361871-063d-4136-865b-88649139ccb0",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "arr = np.array([1,2,3,4,5])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "id": "31b7c4da-06a1-453b-9347-1ef1c89fc712",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([1, 2, 3, 4, 5])"
+      ]
+     },
+     "execution_count": 36,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "arr"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "8e3b3602-99e0-44d5-85cf-8e304f453557",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "'numpy.dtype[int64]' object is not callable",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[0;32mIn[37], line 1\u001b[0m\n\u001b[0;32m----> 1\u001b[0m \u001b[43marr\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mdtype\u001b[49m\u001b[43m(\u001b[49m\u001b[43m)\u001b[49m\n",
+      "\u001b[0;31mTypeError\u001b[0m: 'numpy.dtype[int64]' object is not callable"
+     ]
+    }
+   ],
+   "source": [
+    "arr.dtype()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f2434277-7f63-459e-8e24-e48e7242bc27",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a0fdb2af-c896-4408-a307-05fcc9801ebe",
+   "metadata": {},
+   "source": [
+    "Q2. Write a code to print the data type of each and every element of both the variables list_ and\n",
+    "arra_list."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "id": "1a1aeba0-fec5-4483-b6af-72cd57e9b701",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "'numpy.dtype[int64]' object is not callable",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[0;32mIn[38], line 1\u001b[0m\n\u001b[0;32m----> 1\u001b[0m \u001b[43marr\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mdtype\u001b[49m\u001b[43m(\u001b[49m\u001b[43m)\u001b[49m\n",
+      "\u001b[0;31mTypeError\u001b[0m: 'numpy.dtype[int64]' object is not callable"
+     ]
+    }
+   ],
+   "source": [
+    "arr.dtype()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "7f5d4473-417d-472e-948a-14ed3dc44522",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "'numpy.dtype[int64]' object is not callable",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[0;32mIn[39], line 1\u001b[0m\n\u001b[0;32m----> 1\u001b[0m \u001b[43marr\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mdtype\u001b[49m\u001b[43m(\u001b[49m\u001b[43m)\u001b[49m\n",
+      "\u001b[0;31mTypeError\u001b[0m: 'numpy.dtype[int64]' object is not callable"
+     ]
+    }
+   ],
+   "source": [
+    "arr.dtype()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "69029c0c-659b-4118-a1f6-60fcab484760",
+   "metadata": {},
+   "source": [
+    "Q3. Considering the following changes in the variable, array_list:\n",
+    "array_list = np.array(object = list_, dtype = int)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "4d608259-cd1a-4278-ab7d-d8a1d1d320d8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "array_list = np.array(object = list_, dtype = int)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "511aa957-02be-4928-a0e3-a2196f3604b5",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "'numpy.dtype[int64]' object is not callable",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[0;32mIn[28], line 1\u001b[0m\n\u001b[0;32m----> 1\u001b[0m \u001b[43marray_list\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mdtype\u001b[49m\u001b[43m(\u001b[49m\u001b[43marray_list\u001b[49m\u001b[43m)\u001b[49m\n",
+      "\u001b[0;31mTypeError\u001b[0m: 'numpy.dtype[int64]' object is not callable"
+     ]
+    }
+   ],
+   "source": [
+    "array_list.dtype()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "93b2367f-cdf0-4ff7-ab46-4474edf56fb6",
+   "metadata": {},
+   "source": [
+    "Consider the below code to answer further questions:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "ed55b871-e6a0-4883-8519-d8a2c6ca6dcc",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np\n",
+    "num_list = [ [ 1 , 2 , 3 ] , [ 4 , 5 , 6 ] ]\n",
+    "num_array = np.array(object = num_list)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "1f10cb4b-9213-459b-9d01-6c5c373bdb5b",
+   "metadata": {},
+   "source": [
+    "Q4. Write a code to find the following characteristics of variable, num_array:\n",
+    "(i) shape\n",
+    "(ii) size"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "b4fed338-8340-40ac-a9f8-a1c2bcd8fecf",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(2, 3)"
+      ]
+     },
+     "execution_count": 16,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "num_array.shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "da2d0369-91a4-4bd3-b088-b7c82b8e6dda",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "6"
+      ]
+     },
+     "execution_count": 17,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "num_array.size"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0c0e87aa-262c-4a0d-af97-683c1fa2a59d",
+   "metadata": {},
+   "source": [
+    "Q5. Write a code to create numpy array of 3*3 matrix containing zeros only, using a numpy array\n",
+    "creation function."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "id": "98037e0b-afdb-4488-ac27-d1c25ff53366",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "arr = np.zeros((3,3))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "id": "8114d3f5-a81d-4c7e-a13b-2dc706f7eaa3",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[0., 0., 0.],\n",
+       "       [0., 0., 0.],\n",
+       "       [0., 0., 0.]])"
+      ]
+     },
+     "execution_count": 48,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "arr"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "bc1dff95-4002-4232-af2e-d02335943d6e",
+   "metadata": {},
+   "source": [
+    "Q6. Create an identity matrix of shape (5,5) using numpy functions?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "id": "fa1d5fcc-7ad3-4285-8261-62fcc6752ad7",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[1., 0., 0., 0., 0.],\n",
+       "       [0., 1., 0., 0., 0.],\n",
+       "       [0., 0., 1., 0., 0.],\n",
+       "       [0., 0., 0., 1., 0.],\n",
+       "       [0., 0., 0., 0., 1.]])"
+      ]
+     },
+     "execution_count": 51,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.eye(5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5ba59eb3-b80f-4c2b-9dd8-0515982df711",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
